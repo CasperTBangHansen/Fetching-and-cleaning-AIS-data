@@ -1,5 +1,5 @@
 # Fetching and cleaning AIS data
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br/>
 This project is a small part of a Bachelor project made by Casper Bang-Hansen and Mathias Jensen.
 The findings of the report can be found [here](https://drive.google.com/file/d/1B9XpTJCqlNLRMJ-1MbzLPj7wPqQ2w-yt/view?usp=sharing)
 
