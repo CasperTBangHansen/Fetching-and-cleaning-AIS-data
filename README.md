@@ -134,7 +134,7 @@ ais_class.import_interpolated(PICKLE_FOLDER, PICKLE_INTERPOLATED_FILE)
 ```
 
 ## Creating waypoints
-Go through step 1-9 for [Clean the AIS data](##Clean-the-AIS-data) and then go through the following steps:
+Go through step 1-9 for ```[Clean the AIS data](##Clean-the-AIS-data)``` and then go through the following steps:
 ### Step 1
 Create trips with 100 waypoints per trip:
 ```
@@ -158,19 +158,3 @@ ais_class.import_waypoints(PICKLE_FOLDER, PICKLE_WAYPOINTS_FILE)
 
 ## License
 [MIT](License)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
