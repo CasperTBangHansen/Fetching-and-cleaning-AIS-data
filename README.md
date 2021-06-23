@@ -14,9 +14,12 @@ Secondly import the file "_1_get_ports_polygon.py", and change the constant "GEO
 The following code shows how to get the polygon from the database
 ```python
 from _1_get_ports_polygon.py import save_polygons
-# Setting variables
+from modules.operating_system import OperatingSystem
+
+# Setting up variables
+os = OperatingSystem()
 GEO_AREA = 'Oestersoe_dtu_casper'
-FILE_PATH = "AIS\\Oestersoe_dtu_casper\\Oestersoe_polygon.csv"
+FILE_PATH = os.path('AIS','Oestersoe_dtu_casper', 'Oestersoe_polygon.csv)
 
 # Function call
 save_polygons(geo_area = GEO_AREA, file_path = FILE_PATH)
@@ -54,7 +57,7 @@ Setup the initial variables for file handling:
 from _3_import_ais_data import clean_ais
 from modules.operating_system import OperatingSystem
 
-# Constants
+# Variables
 os = OperatingSystem()
 FOLDERPORTS = "Data"
 PORTFILENAME = "Gatehouse_locode.csv"
