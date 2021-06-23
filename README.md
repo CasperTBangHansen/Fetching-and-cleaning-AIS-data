@@ -115,7 +115,7 @@ ais_class.interpolate_routes(10*60)
 Removing trips which doesnt move more then 10 km within 24 hours.
 Furthermore the trips which includes datapoints with speeds less then 0.5 knots are removed.
 ```python
-ais_class.clean_data(threshold = 10, interval = 24*60*60, speed = 0.5)
+ais_class.clean_data(threshold = 10, interval_s = 24*60*60, speed = 0.5)
 ```
 ### Step 9
 Save the data sets:
