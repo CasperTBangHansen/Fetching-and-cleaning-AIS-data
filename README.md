@@ -10,10 +10,10 @@ Open the file "database_details.py" and change the login details for the databas
 ### Step 2
 The first step is finding the desired polygon on the database.
 ### Step 3
-Secondly import the file "_1_get_ports_polygon.py", and change the constant "GEO_AREA" to the name of the desired polygon found on the database. Furthermore the file path should be changed to the desired file path.
+Secondly import the file "get_ports_polygon.py", and change the constant "GEO_AREA" to the name of the desired polygon found on the database. Furthermore the file path should be changed to the desired file path.
 The following code shows how to get the polygon from the database
 ```python
-from _1_get_ports_polygon.py import save_polygons
+from get_ports_polygon.py import save_polygons
 from modules.operating_system import OperatingSystem
 
 # Setting up variables
@@ -27,9 +27,9 @@ save_polygons(geo_area = GEO_AREA, file_path = FILE_PATH)
 Note: Make sure "FILE_PATH" exists as a path
 ### Step 4
 The third step is to fetch the AIS data. This is done by selecting a ship type and a range of dates.\\
-The following code shows how to fetch the AIS data. Import the file "_2_get_ais_data.py" :
+The following code shows how to fetch the AIS data. Import the file "get_ais_data.py" :
 ```python
-from _2_get_ais_data import get_ship_ais
+from get_ais_data import get_ship_ais
 
 # Setup variables
 FOLDER_NAME = "AIS"
@@ -54,7 +54,7 @@ Note: Make sure the following path exists "{FOLDER_NAME}/{GEO_AREA}/{SHIPTYPE}"
 ### Step 1
 Setup the initial variables for file handling:
 ```python
-from _3_import_ais_data import clean_ais
+from import_ais_data import clean_ais
 from modules.operating_system import OperatingSystem
 
 # Variables
