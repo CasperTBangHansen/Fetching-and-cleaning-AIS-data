@@ -1,6 +1,6 @@
 # Fetching and cleaning AIS data
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <br/>
-This project is a small part of a Bachelor project made by Casper Bang-Hansen and Mathias Jensen.
+This project is a small part of a Bachelor project made by Casper Bang-Hansen and Mathias Jensen.<br/>
 The findings of the report can be found [here](https://drive.google.com/file/d/1B9XpTJCqlNLRMJ-1MbzLPj7wPqQ2w-yt/view?usp=sharing)
 
 In the following a description on how to use the code will be made:
@@ -11,7 +11,7 @@ Open the file "database_details.py" and change the login details for the databas
 ### Step 2
 The first step is finding the desired polygon on the database.
 ### Step 3
-Secondly import the file "get_ports_polygon.py", and change the constant "GEO_AREA" to the name of the desired polygon found on the database. Furthermore the file path should be changed to the desired file path.
+Secondly import the file "get_ports_polygon.py", and change the constant "GEO_AREA" to the name of the desired polygon found on the database. Furthermore the file path should be changed to the desired file path.<br/>
 The following code shows how to get the polygon from the database
 ```python
 from get_ports_polygon.py import save_polygons
@@ -27,7 +27,7 @@ save_polygons(geo_area = GEO_AREA, file_path = FILE_PATH)
 ```
 Note: Make sure "FILE_PATH" exists as a path
 ### Step 4
-The third step is to fetch the AIS data. This is done by selecting a ship type and a range of dates.\\
+The third step is to fetch the AIS data. This is done by selecting a ship type and a range of dates.<br/>
 The following code shows how to fetch the AIS data. Import the file "get_ais_data.py" :
 ```python
 from get_ais_data import get_ship_ais
@@ -114,7 +114,7 @@ Interpolate routes with an frequency of 10 minutes:
 ais_class.interpolate_routes(10*60)
 ```
 ### Step 8
-Removing trips which doesnt move more then 10 km within 24 hours.
+Removing trips which doesnt move more then 10 km within 24 hours.<br/>
 Furthermore the trips which includes datapoints with speeds less then 0.5 knots are removed.
 ```python
 ais_class.clean_data(threshold = 10, interval_s = 24*60*60, speed = 0.5)
