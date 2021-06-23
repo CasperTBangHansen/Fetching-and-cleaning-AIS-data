@@ -51,6 +51,7 @@ get_ship_ais(
 Note: Make sure the following path exists "{FOLDER_NAME}/{GEO_AREA}/{SHIPTYPE}"
 
 ## Clean the AIS data
+The following steps shows how to import and clean the AIS data. A working example can be found in [clean_example.py](clean_example.py)
 ### Step 1
 Setup the initial variables for file handling:
 ```python
